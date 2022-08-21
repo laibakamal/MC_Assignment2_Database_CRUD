@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/Assignment2_Database_CRUD/MC_Assignment2_Database_CRUD/SqliteDatabasePostVacLec01/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/Assignment2_Database_CRUD/MC_Assignment2_Database_CRUD/SqliteDatabasePostVacLec01/app/src/main/res/layout/add_student.xml" value="0.15806159420289856" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/Assignment2_Database_CRUD/MC_Assignment2_Database_CRUD/SqliteDatabasePostVacLec01/app/src/main/res/layout/delete_student.xml" value="0.209375" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/Assignment2_Database_CRUD/MC_Assignment2_Database_CRUD/SqliteDatabasePostVacLec01/app/src/main/res/layout/update_student.xml" value="0.209375" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/Assignment2_Database_CRUD/MC_Assignment2_Database_CRUD/SqliteDatabasePostVacLec01/app/src/main/res/layout/view_students.xml" value="0.15806159420289856" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT01_KIDS_ENGLISH_BOOK/SqliteDatabasePostVacLec01/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
