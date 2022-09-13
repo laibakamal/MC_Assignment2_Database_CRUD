@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2=new Intent(MainActivity.this,AddStudent.class);
-                startActivity(intent2);
+                Intent intent1=new Intent(MainActivity.this,AddStudent.class);
+                startActivity(intent1);
             }});
 
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         buttonViewAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2=new Intent(MainActivity.this,AddStudent.class);
+                Intent intent2=new Intent(MainActivity.this,ViewAllStudents.class);
                 startActivity(intent2);
             }});
 
@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
         buttonUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2=new Intent(MainActivity.this,AddStudent.class);
-                startActivity(intent2);
+                Intent intent3=new Intent(MainActivity.this,UpdateStudent.class);
+                startActivity(intent3);
             }});
 
 
@@ -70,9 +70,12 @@ public class MainActivity extends AppCompatActivity {
         buttonDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2=new Intent(MainActivity.this,AddStudent.class);
-                startActivity(intent2);
+                Intent intent4=new Intent(MainActivity.this,DeleteStudent.class);
+                startActivity(intent4);
             }});
+
+
+
 //        buttonAdd.setOnClickListener(new View.OnClickListener() {
 //            StudentModel studentModel;
 //
@@ -92,17 +95,17 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        buttonViewAll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DBHelper dbHelper = new DBHelper(MainActivity.this);
-                List<StudentModel> list = dbHelper.getAllStudents();
-                ArrayAdapter arrayAdapter = new ArrayAdapter<StudentModel>
-                        (MainActivity.this, android.R.layout.simple_list_item_1,list);
-                listViewStudent.setAdapter(arrayAdapter);
-
-            }
-        });
+//        buttonViewAll.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                DBHelper dbHelper = new DBHelper(MainActivity.this);
+//                List<StudentModel> list = dbHelper.getAllStudents();
+//                ArrayAdapter arrayAdapter = new ArrayAdapter<StudentModel>
+//                        (MainActivity.this, android.R.layout.simple_list_item_1,list);
+//                listViewStudent.setAdapter(arrayAdapter);
+//
+//            }
+//        });
 
     }
 }
