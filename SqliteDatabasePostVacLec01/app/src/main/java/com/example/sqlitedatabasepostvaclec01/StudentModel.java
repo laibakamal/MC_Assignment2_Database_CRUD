@@ -36,8 +36,12 @@ public class StudentModel {
         this.rollNmber = rollNmber;
     }
 
-    public boolean isEnroll() {
-        return isEnroll;
+    public int isEnroll() {
+        if (isEnroll)
+        {
+            return 1;
+        }
+        return 0;
     }
 
     public void setEnroll(boolean enroll) {

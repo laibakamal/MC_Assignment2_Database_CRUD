@@ -11,12 +11,13 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
+
+
     public static final String STUDENT_ID = "StudentID";
     public static final String STUDENT_NAME = "StudentName";
     public static final String STUDENT_ROLL = "StudentRollNumber";
     public static final String STUDENT_ENROLL = "IsEnrolled";
     public static final String STUDENT_TABLE = "StudentTable";
-
 
 
     public DBHelper(@Nullable Context context) {
@@ -76,6 +77,26 @@ public class DBHelper extends SQLiteOpenHelper {
 
         cursorCourses.close();
         return studentArrayList;
+    }
+
+
+
+    public int  updateStudent(StudentModel STUDENTModel){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(STUDENT_NAME, STUDENTModel.getName());
+        values.put(STUDENT_ROLL, STUDENTModel.getRollNmber());
+        values.put(STUDENT_ENROLL, STUDENTModel.isEnroll());
+
+        return db.update(STUDENT_TABLE,values,STUDENT_ROLL +"=?", new String[]{String.valueOf(STUDENTModel.getRollNmber())});
+    }
+
+
+    public void deleteStudent(int rollnum)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(STUDENT_TABLE,STUDENT_ROLL+"=?",new String[]{String.valueOf(rollnum)});
+        db.close();
     }
 
 }
